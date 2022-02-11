@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Montserrat&display=swap");
+
+/* GLOBAL ELEMENTS */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cormorant Garamond", serif;
+  background-color: #ede0d4;
+  color: #7f5539;
+}
+
+h1,
+h2 {
+  color: #6c1018;
+}
+
+p {
+  text-align: justify;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* NAVEGADOR */
+
+.navbar {
+  font-size: 24px;
+}
+
+.nav-item {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.nav-item a {
+  text-decoration: bolder;
+}
+
+/* NOSOTROS */
+
+#page-wrapper {
+  background-image: url(../images/dan-meyers-0AgtPoAARtE-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 4rem;
+}
+
+#nos-container {
+  background-color: #ede0d4;
+  border-radius: 1rem;
+}
+
+#nosotros p {
+  color: #5b4a37;
+  font-size: 21px;
+}
+
+.nos-img {
+  border-radius: 2rem;
+}
+
+/* NEWSLETTER */
+
+#news {
+  background-color: #7f5539;
+}
+
+@media (min-width: 768px) {
+  .news-input {
+    width: 50%;
+  }
+}
+
+/* BODEGAS */
+
+.carousel-item {
+  height: 40rem;
+  position: relative;
+}
+
+.overlay-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  background-position: center;
+  background-size: cover;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+/* FOOTER */
+
+#footer {
+  background-color: #7f5539;
+}
+
+#footer a {
+  color: white;
+  font-size: 18px;
+}
+
+/* FORMULARIO DE CONTACTO */
+
+.page-bg {
+  min-height: 70vh;
+  background-image: url(../images/elisha-terada-MDJvfXJGnRM-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.contactForm {
+  border-radius: 1rem;
+  min-height: 600px;
+  width: 40%;
+}
+
+@media (max-width: 768px) {
+  .contactForm {
+    width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .contactForm {
+    width: 75%;
+  }
+}
+
+/* CATÁLOGO */
+
+#vinos-rojos h1 {
+  background-color: #6c1018;
+  color: white;
+}
+
+#vinos-blancos h1 {
+  color: black;
+  background-color: #eeedc4;
+}
+
+#vinos-rosados h1 {
+  color: black;
+  background-color: #f4c4bb;
+}
+
+.description {
+  width: 80%;
+}
+
+@media (max-width: 768px) {
+  .product {
+    width: 100%;
+  }
+}
+
+@media (max-width: 442px) {
+  .product {
+    width: 100%;
+  }
+  .description {
+    width: 100%;
+  }
+}
+
+/* SECRET */
+
+/* SEND BUTTON */
+.contact-btn {
+  height: 45px;
+  width: 100%;
+  background: #b48554;
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 26px;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.contact-btn:hover {
+  background: #bd7932;
+}
+
+.product-btn {
+  height: 45px;
+  width: 122px;
+  background: #b48554;
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 26px;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* SECRET */
+
+.secret-container {
+  min-height: 70vh;
+  border-radius: 1rem;
+}
+
+.btn-danger {
+  background-color: #6c1018 !important;
+}
+
+.btn-danger:hover {
+  background-color: #b61724 !important;
+}
+
+.btn-primary {
+  background-color: #f7e994;
+  border: none;
+  color: #6c1018;
+}
+
+.btn-primary:hover {
+  background-color: #b6ac6e;
+}
+
+.btn-success {
+  background-color: #63a375;
+}
+
+.btn-redwine {
+  background-color: #6c1018 !important;
+
+  cursor: pointer;
+}
+
+.btn-redwine:hover {
+  background-color: #a12530 !important;
+
+  cursor: pointer;
+}
+
+.btn-whitewine {
+  background-color: #eeedc4 !important;
+
+  cursor: pointer;
+}
+
+.btn-whitewine:hover {
+  background-color: #dbda88 !important;
+
+  cursor: pointer;
+}
+
+.btn-rosewine {
+  background-color: #f4c4bb !important;
+  cursor: pointer;
+}
+
+.btn-rosewine:hover {
+  background-color: #c0938b !important;
+  cursor: pointer;
+}
+
+.btn-cancel {
+  background-color: gray !important;
+  cursor: pointer;
+}
+
+.add-container {
+  min-height: 70vh;
+  background-image: url(../images/john-murzaku-zebTTTLLsoo-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.edit-container {
+  min-height: 70vh;
+  background-image: url(../images/alexandra-dementyeva-NdcH-WxzWgo-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}

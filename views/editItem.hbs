@@ -1,0 +1,55 @@
+{{>header}}
+<section >
+    <div class="container-fluid text-center edit-container">
+        <div class="row d-flex flex-direction-column justify-content-center" >
+            <div class="form-contact d-flex justify-content-center" id="form-contact ">
+<form action="/products/editProduct" method="POST" enctype="multipart/form-data" class="contactForm my-5 p-5 bg-light">
+<input type="text" name="id" value="{{product.id}}" hidden>
+   
+    <div class="mb-4 d-flex flex-column justify-content-center">
+        <h4 class="text-start">Name:</h4>
+        <label for="name" class="form-label"></label>
+        <input type="text" class="form-control" id="name" name="name" value="{{product.name}}">
+    </div>
+    <div class="mb-4 d-flex flex-column justify-content-center">
+        <h4 class="text-start">Origin:</h4>
+        <label for="origin" class="form-label"></label>
+        <input type="text" class="form-control" id="origin" name="origin" value="{{product.origin}}">
+    </div>
+
+    <div class="mb-4 d-flex flex-column justify-content-center">
+        <h4 class="text-start">Wine type:</h4>
+        <select name="type" id="type" value={{product.type}}>
+            <option value="select" selected>Select</option>
+            <option value="red">Red</option>
+            <option value="white">White</option>
+            <option value="rose">Rose</option>
+        </select>
+    </div>
+        
+   <div class="mb-4 d-flex flex-column justify-content-center">
+       <h4 class="text-start">Description:</h4>
+        <label for="description" class="form-label"></label>
+        <textarea class="form-control" id="description" name="description" rows="6" cols="48" maxlength="280">{{product.description}}</textarea>
+    </div>
+    <div class="mb-4 d-flex flex-column justify-content-center">
+        <h4 class="text-start">Price:</h4>
+        <label for="price" class="form-label"></label>
+        <input type="text" class="form-control" id="price" name="price" value="{{product.price}}">
+    </div>
+    <input type="text" value={{product.image}} name="prevImage" hidden>
+    <div class="mb-4 d-flex flex-column justify-content-center">
+        <h4 class="text-start">Image:</h4>
+        <label for="imageFile" class="form-label"></label>
+        <input type="file"  id="imageFile" name="imageFile" class="form-control">
+    </div>
+
+    <input type="submit" value='Edit' class="btn btn-success w-100 mb-1"> 
+    <a href="/products/deleteProduct/{{product.id}}"><input type="button" value="Delete" class="btn btn-danger w-100 mb-1"></a>
+    <a href="/products"><input type="button" value="Cancel" class="btn btn-secondary w-100 mb-1"></a>
+</form>
+</div>
+        </div>
+    </div>
+</section>
+

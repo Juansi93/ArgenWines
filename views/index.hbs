@@ -1,0 +1,231 @@
+
+  <div class="container-fluid" id="page-wrapper">
+    <!-- barra de navegación -->
+    {{>header}}
+    <!-- Nosotros-->
+    <section class=" text-center text-sm-start" id="nosotros">
+      <div class="container p-3 p-sm-5 bg-light" id="nos-container">
+        <div class="row d-sm-flex align-items-center justify-content-around">
+          <div class="col-12 col-sm-6">
+            <h1 class="pt-4 p-sm-0 mb-1 mb-sm-2">About us</h1>
+            <hr />
+            <p class="lead text-justify">
+              Somos un grupo de apasionados por el vino y queremos compartir
+              todas nuestras recomendaciones sobre las mejores bodegas de
+              nuestro país. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Beatae nihil sequi consectetur 1 quis eaque esse
+              aperiam magni enim. Quod iste doloribus neque volup2tates sequi,
+              tempora distinctio facilis sunt maiores.
+            </p>
+          </div>
+          <img class="img-fluid col-12 col-sm-4 nos-img"  src="images/roberta-sorge-IywM7AQTZcM-unsplash.jpg"
+            alt="foto de un viñedo" />
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Newsletter-->
+
+  <section class="text-light p-5" id="news">
+    <div class="container">
+      <div class="d-md-flex justify-content-between align-items-center">
+        <h3 class="mb-3 mb-md-0">¡Suscribe to newsletter!</h3>
+
+        <div class="input-group news-input">
+          <input type="text" class="form-control" placeholder="Ingrese su correo electrónico" />
+          <button class="btn btn-light btn-lg" type="button">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bodegas -->
+  <section class="text-sm-start" id="bodegas">
+    <div class="container">
+      <h1 class="m-4 text-center">
+        Best "bodegas" selection
+        <hr />
+      </h1>
+
+      <div class="row gx-0">
+        <div id="myCarousel" class="carousel slide carousel-fade col-12 mb-5" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+              aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-interval="7000">
+              <div class="overlay-image" style="background-image: url(images/Zuccardi-bodega.jpeg)"></div>
+              <div class="carousel-caption d-block d-md-block">
+                <h4 class="pb-2">Bodega Zuccardi</h4>
+              </div>
+            </div>
+
+            
+
+            <div class="carousel-item" data-interval="3000">
+              <div class="overlay-image" style="background-image: url(images/bodega-zuccardi3.jpeg)"></div>
+              <div class="carousel-caption d-block d-md-block">
+                <h4 class="pb-2">Bodega Zuccardi</h4>
+              </div>
+            </div>
+
+            <div class="carousel-item" data-interval="5000">
+              <div class="overlay-image" style="background-image: url(images/bodega-zuccardi4.jpeg)"></div>
+              <div class="carousel-caption d-block d-md-block">
+                <h4 class="pb-2">Bodega Zuccardi</h4>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="overlay-image" style="background-image: url(images/bodega-zuccardi5.jpeg)"></div>
+              <div class="carousel-caption d-block d-md-block">
+                <h4 class="pb-2">Bodega Zuccardi</h4>
+              </div>
+            </div>
+
+            <div class="carousel-item" data-interval="2000">
+              <div class="overlay-image" style="background-image: url(images/bodega-zuccardi2.jpeg)"></div>
+              <div class="carousel-caption d-block d-md-block">
+                <h4 class="pb-2">Bodega Zuccardi</h4>
+              </div>
+            </div>
+          </div>
+
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class=" p-3 p-sm-5 bg-light mb-5 d-sm-flex align-items-center justify-content-evenly">
+          <div class="col-12 col-sm-6">
+            <h2 class="mb-1 mb-sm-2">Bodega Zuccardi</h2>
+            <hr />
+            <p class="lead text-justify">
+              Ubicada en el corazón del abanico aluvial del río Tunuyán, este viñedo expresa la diversidad típica de los
+              suelos calcáreos de Paraje Altamira. La viticultura de esta finca se practica ejecutando cada tarea del
+              ciclo del viñedo (desde la poda hasta la cosecha) orientada por tipo de suelo. En el corazón del viñedo se
+              encuentra la Bodega.
+              Los visitantes pueden recorrer los espacios de la bodega y vivir
+              la experiencia de recorrer los viñedos descubriendo las
+              características y particularidades de los diferentes suelos que
+              otorgan identidad a nuestros vinos.
+            </p>
+            <ul>
+              <li>Turismo: Abierto de martes a domingo.</li>
+              <li>
+                Horarios para visita y degustación: 09:30 hs – 11.00 hs –
+                12.30 hs – 16.00 hs
+              </li>
+              <li>Todos los programas con reserva previa.</li>
+            </ul>
+          </div>
+          <iframe class="col-sm-5"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3316.5984112096717!2d-69.1569501841363!3d-33.771041921424484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967c163807edf24f%3A0xd6f143d49784e077!2sZuccardi%20-%20Valle%20de%20Uco!5e0!3m2!1ses!2sar!4v1638235223592!5m2!1ses!2sar"
+            width="100%" height="450" frameborder="0" style="border: 0" allowfullscreen=""></iframe>
+        </div>
+
+
+        <div id="myCarousel2" class="carousel slide carousel-fade col-12 mb-5" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="0" class="active" aria-current="true"
+              aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="overlay-image" style="background-image: url(images/bodega-catena-zapata.jpeg)"></div>
+              <div class="carousel-caption d-block d-md-block">
+                <h4 class="pb-2">Bodega Catena Zapata</h4>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="overlay-image" style="
+                    background-image: url(images/bodega-catena-zapata3.jpeg);
+                  "></div>
+              <div class="carousel-caption d-block d-md-block">
+                <h4 class="pb-2">Bodega Catena Zapata</h4>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="overlay-image" style="
+                    background-image: url(images/piramide.jpg);
+                  "></div>
+              <div class="carousel-caption d-block d-md-block">
+                <h4 class="pb-2">Bodega Catena Zapata</h4>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="overlay-image" style="
+                    background-image: url(images/bodega-catena-zapata4.jpeg);
+                  "></div>
+              <div class="carousel-caption d-none d-md-block">
+                <h4 class="pb-2">Bodega Catena Zapata</h4>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="overlay-image" style="
+                    background-image: url(images/bodega-catena-zapata.png);
+                  "></div>
+              <div class="carousel-caption d-none d-md-block">
+                <h4 class="pb-2">Bodega Catena Zapata</h4>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="mb-5 p-3 p-sm-5 bg-light mb-3 d-sm-flex align-items-center justify-content-evenly">
+          <div class="col-12 col-sm-6">
+            <h2 class="mb-1 mb-sm-2">Bodega Catena Zapata</h2>
+            <hr />
+            <p class="lead text-justify">
+              Catena Zapata es, desde hace varios años, la bodega más prestigiosa de la Argentina, tanto para el
+              consumidor local como en los mercados externos. Esto tiene que ver con sus vinos, y sus vinos tienen que
+              ver con sus hacedores. Pero también con sus estrategias de comunicación y las diversas inversiones que
+              llevan a cabo en distintos mercados para seguir fortaleciendo su imagen de marca.
+            </p>
+            <ul>
+              <li>Turismo: Abierto de martes a domingo.</li>
+              <li>
+                Horarios para visita y degustación: 09:30 hs – 11.00 hs –
+                12.30 hs – 16.00 hs
+              </li>
+              <li>Todos los programas con reserva previa.</li>
+            </ul>
+          </div>
+          <iframe class="col-sm-5"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106732.64739285289!2d-69.14630042287554!3d-33.282321702956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e09451c514acf%3A0x9ec004bd90a3756d!2sCatena%20Zapata!5e0!3m2!1ses!2sar!4v1638235478729!5m2!1ses!2sar"
+            width="100%" height="450" frameborder="0" style="border: 0" allowfullscreen=""></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+  </div>
+
