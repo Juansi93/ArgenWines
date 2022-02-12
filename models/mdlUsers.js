@@ -11,8 +11,7 @@ const getUser = async (user, pass) => {
 const addUser = async (user, email, pass) => {
   try {
       const query = "insert into users set ?";
-      const hashedPass = await md5(pass)
-      const row = await pool.query(query, [user, email, hashedPass]);
+      const row = await pool.query(query, [user, email, pass]);
       return row[0];
       
       
