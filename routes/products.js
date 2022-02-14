@@ -84,7 +84,7 @@ router.post('/editProduct', async (req, res) => {
     const row = await productsModel.getProduct(req.body.id);
     await destroy(row[0].image);
     const imageFile = req.files.imageFile;
-    img_id = (await uploader(imageFile.tempFilePath)).public.id;
+    img_id = (await uploader(imageFile.tempFilePath)).public_id;
   }
   const data = {
     id: req.body.id,
