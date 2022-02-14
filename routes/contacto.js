@@ -29,9 +29,6 @@ router.post("/", validationRules, async (req, res) => {
         res.render('contacto', { formData, arrWarnings });
     } else {
 
-    
-
-
     const emailMsg = {
         to: "atencioncliente@argenwines.com",
         from: req.body.email,
