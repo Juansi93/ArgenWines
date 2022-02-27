@@ -20,5 +20,18 @@ const addUser = async (user, email, pass) => {
   }
 }
 
+const existingUser = async (email) => {
+  try {
+    const query = "select * from users where email = ?";
+    const row = await pool.query(query, [email])
+    return row [0];
+  
+    
 
-module.exports = { getUser, addUser };
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+
+module.exports = { getUser, addUser, existingUser };
