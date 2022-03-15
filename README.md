@@ -1,3 +1,2 @@
 # ArgenWines
-
-This is a wine blog project built for my full stack developer course at UTN.
+NodeJs Web App with Sign Up, Login, CRUD, using ExpressJs, validations, authentications and authorisations, NodeMailer and MailTrap, MySQL. Feel free to use this code as needed.
